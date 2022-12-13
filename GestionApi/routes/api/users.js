@@ -175,7 +175,7 @@ router.post('/send-email/recovery/:mailUser',
                 success: 'Envio correcto',
             });
             const token = createToken(user);
-            const subject = "FincaQuixoteAPP restablecer Usuario"
+            const subject = "ThorAPP restablecer Usuario"
             const text = "Email de Recuperacion del Password";
             const link = `<h2>Hola ${user.name_user}</h2><p>Pincha en este enlace... <a href="http://localhost:4200/passwords?${token}">Link</a>...para cambiar tu Password.</p>`       
             const mail = await sendEmail(mailUser,text,link,subject)

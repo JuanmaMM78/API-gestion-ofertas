@@ -39,12 +39,12 @@ const sendEmail = (mailUser, text, link, subject) => {
         port: 465,
         secure: true, 
         auth: {
-        user: 'fincaquixote@gmail.com',
-        pass: 'oxrbqwmtdobnrygs',
+        user: 'ThorAppProject@gmail.com',
+        pass: 'cvporfxuzlzdjzyu',
         },
     });    
     const mailDate = {
-        from: "fincaquixote@gmail.com",
+        from: "ThorAppProject@gmail.com",
         to: mailUser,
         subject: subject,
         text: text,
@@ -62,12 +62,12 @@ const sendEmail = (mailUser, text, link, subject) => {
 
 /// ENVIO DE MAIL DE LOS PEDIDOS PENDIENTES
 const Email = async(orderId, status, mailUser, user, userName, comment) => { 
-            const subject = `FincaQuixoteAPP Notificación pedido nº${orderId}`
+            const subject = `ThorAPP Notificación pedido nº ${orderId}`
             const Status = status.toUpperCase();
             const UserName = userName.toUpperCase();
             const token = createToken(user);
             const text = "Email de Validación de Pedido";
-            const link = `<h3>Hola ${UserName} el pedido <strong>nº${orderId}</strong> esta en el estado de <strong>${Status}</strong> </h3><p>${comment}<p/><br><P>Pincha en este enlace... <a href="http://localhost:4200/">Link</a>...para ver el pedido.</P>`   
+            const link = `<h3>Hola ${UserName} el pedido <strong>nº${orderId}</strong> esta en el estado de <strong>${Status}</strong> </h3><p>Comentario: ${comment}<p/><br><P>Pincha en este enlace... <a href="http://localhost:4200/">Link</a>...para ver el pedido.</P>`   
             return sendEmail(mailUser,text,link,subject)             
    
 }
