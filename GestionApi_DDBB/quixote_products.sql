@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `quixote` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `quixote`;
 -- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
 --
 -- Host: localhost    Database: quixote
@@ -44,7 +42,7 @@ CREATE TABLE `products` (
 
 LOCK TABLES `products` WRITE;
 /*!40000 ALTER TABLE `products` DISABLE KEYS */;
-INSERT INTO `products` VALUES (1,'Tomate Otelo','campo','mediano',0.34,50000,47493,1,'aeef5915b11d704516b326e8edb0cd18.jpeg'),(2,'Tomate Irati','campo','grande',0.35,55000,55000,1,'0f602bdff2f6646e5a77aec462697cb3.jpeg'),(3,'Tomate Pera','campo','pequeño',0.47,32000,30157,1,'28dd9ff79a8b7982398494ec62cb1179.jpeg'),(4,'Melón Galia','campo','mediano',0.40,15000,15000,1,'b81f8652c81f3ca56a9d1db7d3b5c500.jpeg'),(5,'Melón Piel de Sapo','campo','mediano',0.20,18000,14000,1,'9cfc0dc5db008ca3107dba44fd32321e.jpeg'),(6,'Sandia Rayada','campo','grande',0.25,20000,19166,1,'ec5657f7adb771bc64cd9f27b5bd2349.jpeg'),(7,'Cebolla Reca','campo','mediano',0.12,40000,39112,1,'f55048a4278bcd923b867bfe33d0f597.jpeg'),(8,'Cebolla Roja','campo','pequeño',0.15,34000,34000,1,'fd9948eaf2f98c0a63a73107639a3058.jpeg'),(9,'Ajo Blanco','refrigeracion','grande',0.20,13000,13000,1,'fc7cc6bd42f97934e1f9f608e6bd0991.jpeg'),(10,'Ajo Morado','refrigeracion','mediano',0.18,15000,0,0,'692044629bcc59a0bc3192f6a4f13934.jpeg'),(11,'Calabaza Butternut','campo','grande',0.60,35000,35000,1,'c861fbb1887a4c964447ac9442f2427e.jpeg'),(12,'Patata','campo','mediano',0.30,0,0,0,'43f5a7ef15b7bafee3f1acd8d02ac1ff.jpeg'),(94,'CALABAZA','campo','mediano',2.00,213123,213123,0,'6504e4e46e3f5de89004735ecb92892a.jpeg');
+INSERT INTO `products` VALUES (1,'Tomate Otelo','campo','mediano',0.34,50000,47259,1,'aeef5915b11d704516b326e8edb0cd18.jpeg'),(2,'Tomate Irati','campo','grande',0.35,55000,54000,1,'0f602bdff2f6646e5a77aec462697cb3.jpeg'),(3,'Tomate Pera','campo','pequeño',0.47,32000,30157,1,'28dd9ff79a8b7982398494ec62cb1179.jpeg'),(4,'Melón Galia','campo','mediano',0.40,15000,15000,1,'b81f8652c81f3ca56a9d1db7d3b5c500.jpeg'),(5,'Melón Piel de Sapo','campo','mediano',0.20,18000,14000,1,'9cfc0dc5db008ca3107dba44fd32321e.jpeg'),(6,'Sandia Rayada','campo','grande',0.25,20000,19166,1,'ec5657f7adb771bc64cd9f27b5bd2349.jpeg'),(7,'Cebolla Reca','campo','mediano',0.12,40000,39112,1,'f55048a4278bcd923b867bfe33d0f597.jpeg'),(8,'Cebolla Roja','campo','pequeño',0.15,34000,34000,1,'fd9948eaf2f98c0a63a73107639a3058.jpeg'),(9,'Ajo Blanco','refrigeracion','grande',0.20,13000,13000,1,'fc7cc6bd42f97934e1f9f608e6bd0991.jpeg'),(10,'Ajo Morado','refrigeracion','mediano',0.18,15000,0,0,'692044629bcc59a0bc3192f6a4f13934.jpeg'),(11,'Calabaza Butternut','campo','grande',0.60,35000,33033,1,'c861fbb1887a4c964447ac9442f2427e.jpeg'),(12,'Patata','campo','mediano',0.30,0,0,0,'43f5a7ef15b7bafee3f1acd8d02ac1ff.jpeg'),(94,'CALABAZA','campo','mediano',2.00,213123,213123,0,'6504e4e46e3f5de89004735ecb92892a.jpeg');
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -57,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-12 20:35:57
+-- Dump completed on 2022-12-13 10:59:04
