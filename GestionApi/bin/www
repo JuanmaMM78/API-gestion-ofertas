@@ -8,6 +8,10 @@ var app = require('../app');
 var debug = require('debug')('quixoteapp:server');
 var http = require('http');
 
+// Obtengo variables de entorno
+require('dotenv').config();
+
+// Conecto a la BD 
 require('../config/db');
 
 /**
