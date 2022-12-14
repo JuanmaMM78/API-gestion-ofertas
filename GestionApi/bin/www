@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('quixoteapp:server');
+var debug = require('debug')('gestionapp:server');
 var http = require('http');
 
 // Obtengo variables de entorno

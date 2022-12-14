@@ -8,4 +8,5 @@ const pool = mysql.createPool({
   database: process.env.DB_NAME, 
 });
 
+
 global.db = pool;
