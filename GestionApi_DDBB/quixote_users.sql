@@ -31,7 +31,7 @@ CREATE TABLE `users` (
   `role` enum('master','admin','user') NOT NULL,
   `status` tinyint NOT NULL DEFAULT '1',
   PRIMARY KEY (`id_user`)
-) ENGINE=InnoDB AUTO_INCREMENT=73 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=73 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

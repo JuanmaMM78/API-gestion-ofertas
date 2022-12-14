@@ -35,7 +35,7 @@ CREATE TABLE `orders` (
   `status` enum('aceptado','denegado','pendiente') NOT NULL,
   `comment` varchar(245) DEFAULT 'sin comentario',
   PRIMARY KEY (`id_order`)
-) ENGINE=InnoDB AUTO_INCREMENT=354 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=354 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
