@@ -244,7 +244,16 @@ router.put('/edit/:idOrder/:mailUser',
         const {mailUser} = req.params; 
         const { idOrder } = req.params;
         const order = await getById(idOrder);
-
+          /// ENVIAMOS AVISO DE PEDIDO PENDIENTE POR EMAIL
+        if (mailUser !== 'nomail@none.non') {
+            const user = await getByEmail(mailUser);
+            const userName = user.name_user;   
+            await Email(idOrder, status, mailUser,user,userName,comment);        
+        }       
+        /// CONTROLAMOS QUE NO VAYA VACIO EL DESTINATARIO DEL EMAIL
+        if (order.status === 'pendiente' && mailUser === 'nomail@none.non' || status === 'pendiente' && mailUser === 'nomail@none.non') {     
+             return res.json({errorMail:'Selecciona destinatario'});
+        } 
             /// COMPROBAMOS SI HAY ESTOCK ANTES DE INSERTAR EL PRODUCTO
             if (stockNow >= volSale){
             /// ACTUALIZAMOS EL STOCK SEGUN EL ESTADO ANTERIOR                    
@@ -261,16 +270,7 @@ router.put('/edit/:idOrder/:mailUser',
                 res.json(result);                        
             } else {
                 res.json({errorStock:'No hay Stock suficiente de este Producto!!!'})
-            } 
-             /// ENVIAMOS AVISO DE PEDIDO PENDIENTE POR EMAIL
-            if (mailUser !== 'nomail@none.non') {
-                const user = await getByEmail(mailUser);
-                const userName = user.name_user;   
-                await Email(idOrder, status, mailUser,user,userName,comment);
-               
-            } if (status === 'pendiente' && mailUser === 'nomail@none.non') {
-                res.json({errorMail:'No enviaste email'})
-            }  res.json() 
+            }         
     },
 );
 
