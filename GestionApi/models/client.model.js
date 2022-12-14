@@ -9,7 +9,7 @@ const getAllActive = (active) => {
 }
 
 const getBuyersBest = () => {
-    return executeQuery('select Clients.* , sum(round((Orders.price_sale * Orders.vol_sale),2)) AS vol_price_sale FROM Orders INNER JOIN Clients ON Clients.id_client = Orders.id_Client WHERE Orders.status ="aceptado" GROUP BY Clients.name_client ORDER BY vol_price_sale desc')
+    return executeQuery('select clients.* , sum(round((orders.price_sale * orders.vol_sale),2)) AS vol_price_sale FROM orders INNER JOIN clients ON clients.id_client = orders.id_Client WHERE orders.status ="aceptado" GROUP BY clients.name_client ORDER BY vol_price_sale desc')
 }
 
 const getById = (clienteId) => {

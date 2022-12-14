@@ -1,4 +1,4 @@
-### API PRODUCTS
+### API products
 GET http://localhost:3000/api/products
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM5LCJ1c2VyUm9sZSI6InVzZXIiLCJleHBpcmVzQXQiOjE2NjgyODY1NjQsImlhdCI6MTY2ODI1MDU2NH0.mOSQoXqRQeYjSLWqHt3Cj-2RchPYzSvYnGeUkO3mdx4
 
@@ -52,7 +52,7 @@ Content-Type: application/json
 
 //------------------------------------------------
 
-### API ORDERS
+### API orders
 GET http://localhost:3000/api/orders
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjM2LCJ1c2VyUm9sZSI6Im1hc3RlciIsImV4cGlyZXNBdCI6MTY3MTg1NTY5MywiaWF0IjoxNjY4MjU1NjkzfQ.c_-mBLI-lqN9gMQ-dWtsG47tJIHBe5nsg76kXGhTkCs
 

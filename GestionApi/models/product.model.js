@@ -26,7 +26,7 @@ const upDateStock = (orderId) => {
 }
 
 const getSalesBest = () => {
-    return executeQuery('SELECT Products.* , sum(Orders.vol_sale) AS vol_total_sale FROM Orders INNER JOIN Products ON Products.id_product = Orders.id_product WHERE Orders.status ="aceptado" GROUP BY Products.name_product ORDER BY vol_total_sale desc')
+    return executeQuery('SELECT products.* , sum(orders.vol_sale) AS vol_total_sale FROM orders INNER JOIN products ON products.id_product = orders.id_product WHERE orders.status ="aceptado" GROUP BY products.name_product ORDER BY vol_total_sale desc')
 }
 
 const upDateStockNew = (volOrder, idOrder) => {
