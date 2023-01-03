@@ -25,6 +25,7 @@ const checkToken = async (req, res, next) => {
     next();
 }
 
+
 /// COMPROBAMOS EL ROLE DEL USUARIO PARA EL ACCESO 
 const checkRole = (req, res, next) => {
     if (req.user.role !== 'admin' && req.user.role !== 'master') {
